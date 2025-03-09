@@ -32,7 +32,7 @@ app.use("/api/messages", messageRoutes);
 
 connectDB();  
 if (process.env.NODE_ENV === "production") {
-    app.use(express.static(path.join(__dirname, '../FRONTEND /dist')));
+    app.use(express.static(path.join(__dirname, '../FRONTEND/dist')));
 
 
     app.get("*", (req, res) => {
