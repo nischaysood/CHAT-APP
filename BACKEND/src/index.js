@@ -12,7 +12,6 @@ import path from "path";
 dotenv.config(); 
 
 
-
 app.use(express.json());
 app.use(cookieParser());
 
